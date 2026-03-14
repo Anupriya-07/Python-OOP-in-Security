@@ -1,0 +1,6 @@
+class PortScanner(Device):
+    def scan(self, port):
+        print(f"Scanning {self.ip}:{port}")
+
+scanner = PortScanner("10.0.0.1")
+scanner.scan(22)
